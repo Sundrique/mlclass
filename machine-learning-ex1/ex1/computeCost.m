@@ -6,13 +6,6 @@ function J = computeCost(X, y, theta)
 % Initialize some useful values
 m = length(y); % number of training examples
 
-% You need to return the following variables correctly 
-J = 0;
-
-for i = 1:m
-    J = J + (theta(1) + theta(2) * X(i, 2) - y(i))^2;
-end;
-
-J = J / (2 * m);
+J = sum((X * theta - y) .^ 2) / (2 * m);
 
 end
