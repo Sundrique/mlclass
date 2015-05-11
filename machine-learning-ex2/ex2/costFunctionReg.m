@@ -4,10 +4,6 @@ function [J, grad] = costFunctionReg(theta, X, y, lambda)
 %   theta as the parameter for regularized logistic regression and the
 %   gradient of the cost w.r.t. to the parameters. 
 
-% Initialize some useful values
-m = length(y); % number of training examples
-
-% You need to return the following variables correctly 
 m = length(y); % number of training examples
 h = sigmoid(theta' * X');
 
