@@ -9,7 +9,6 @@ function p = predictOneVsAll(all_theta, X)
 %  for 4 examples) 
 
 m = size(X, 1);
-num_labels = size(all_theta, 1);
 
 % Add ones to the X data matrix
 X = [ones(m, 1) X];
