@@ -12,7 +12,6 @@ z2 = X * Theta1';
 a2 = [ones(m, 1) sigmoid(z2)];
 z3 = a2 * Theta2';
 h = sigmoid(z3);
-o
 [M, p] = max(h, [], 2);
 
 end

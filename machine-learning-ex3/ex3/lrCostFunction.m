@@ -10,7 +10,6 @@ n = length(theta);
 h = sigmoid(theta' * X');
 
 thetaReg = [0; theta(2:n)];
-thetaReg(1) = 0;
 
 % You need to return the following variables correctly
 J = -(log(h) * y + log(1 - h) * (1 - y) - lambda / 2 * sum(thetaReg .^ 2)) / m;
